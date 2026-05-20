@@ -89,27 +89,77 @@ h2 {
     border-left: 5px solid #74ACDF;
 }
 /* Lineup Styling */
-.lineup-container {
-    margin-top: 1.5rem;
-    background-color: #f4f7f6;
-    border-radius: 6px;
-    padding: 1rem;
-    border-left: 4px solid #1e3a5f;
+/* Coded Pitch Container */
+.css-pitch {
+    background-color: #2e7d32; /* Grass green */
+    border: 3px solid white;
+    border-radius: 4px;
+    padding: 1.5rem 0;
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spaces the 4 rows out evenly */
+    overflow: hidden;
 }
 
-.lineup-container h4 {
-    margin-top: 0;
+/* Pitch Details (White lines) */
+.pitch-halfway-line {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.pitch-penalty-box {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 15%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-bottom: none;
+}
+
+/* Player Rows */
+.pitch-row {
+    display: flex;
+    justify-content: space-around; /* Spaces players out nicely */
+    width: 100%;
+    z-index: 1; /* Keeps players above the field lines */
+}
+
+/* Individual Player Styling */
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jersey {
+    background-color: white;
     color: #1e3a5f;
-    font-size: 1.1rem;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.5rem;
+    border: 3px solid #74ACDF; /* Sky blue border */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
-.lineup-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
+.name {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8); /* Helps text stand out on grass */
+    text-align: center;
 }
 
 .position-group h5 {
