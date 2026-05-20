@@ -49,3 +49,42 @@ h2 {
     margin-top: 0;
     color: #74ACDF;
 }
+/* Standings Table Styling */
+.standings {
+    margin-top: 2.5rem;
+}
+
+.standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Header Row */
+.standings-table th {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Individual Cells */
+.standings-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Zebra striping for readability */
+.standings-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Highlight Argentina's row with a subtle sky blue background */
+.argentina-row {
+    background-color: #e8f1fa !important;
+    border-left: 5px solid #74ACDF;
+}
