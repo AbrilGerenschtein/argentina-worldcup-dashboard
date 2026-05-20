@@ -88,3 +88,46 @@ h2 {
     background-color: #e8f1fa !important;
     border-left: 5px solid #74ACDF;
 }
+/* Lineup Styling */
+.lineup-container {
+    margin-top: 1.5rem;
+    background-color: #f4f7f6;
+    border-radius: 6px;
+    padding: 1rem;
+    border-left: 4px solid #1e3a5f;
+}
+
+.lineup-container h4 {
+    margin-top: 0;
+    color: #1e3a5f;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.lineup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.position-group h5 {
+    margin: 0 0 0.3rem 0;
+    color: #74ACDF;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.position-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.position-group li {
+    font-size: 0.95rem;
+    padding: 0.2rem 0;
+    color: #333;
+}
