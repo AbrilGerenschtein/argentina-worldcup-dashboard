@@ -90,18 +90,20 @@ h2 {
 }
 /* Lineup Styling */
 /* Coded Pitch Container */
+/* Coded Pitch Container */
 .css-pitch {
-    background-color: #2e7d32; /* Grass green */
+    background-color: #2e7d32;
     border: 3px solid white;
     border-radius: 4px;
-    padding: 1.5rem 0;
+    padding: 3.5rem 0 1.5rem 0; /* INCREASING the top padding to 3.5rem */
     position: relative;
     height: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Spaces the 4 rows out evenly */
-    overflow: hidden;
+    justify-content: space-between;
+    /* overflow: hidden; <-- DELETE THIS LINE completely! */
 }
+
 
 /* Pitch Details (White lines) */
 .pitch-halfway-line {
@@ -255,7 +257,7 @@ h2 {
     border-radius: 6px;
     width: 120px;
     font-size: 0.75rem;
-    z-index: 10;
+    z-index: 999;
     transition: opacity 0.3s ease; /* Makes it fade in smoothly */
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     pointer-events: none;
