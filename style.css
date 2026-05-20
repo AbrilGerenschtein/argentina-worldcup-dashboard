@@ -131,3 +131,60 @@ h2 {
     padding: 0.2rem 0;
     color: #333;
 }
+/* Knockout Table Styling */
+.knockout-path {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.bracket-table-wrapper {
+    overflow-x: auto;
+}
+
+.knockout-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a; /* Darker theme for premium knockout look */
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.knockout-table th {
+    background-color: #74ACDF; /* Sky blue headers */
+    color: #1e3a5f;
+    padding: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.knockout-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+    font-size: 0.95rem;
+}
+
+.knockout-table tbody tr:hover {
+    background-color: #252525;
+}
+
+/* Emphasize the winning path */
+.highlight-path {
+    color: #85c1e9;
+    font-weight: bold;
+}
+
+/* Championship row styling */
+.final-row {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f1e33 100%);
+    border-top: 2px solid gold;
+}
+
+.gold-text {
+    color: #f1c40f;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
