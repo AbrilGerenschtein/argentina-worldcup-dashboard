@@ -136,6 +136,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative; /* This is NEW - it keeps the tooltip attached to the player */
+    cursor: pointer;    /* This is NEW - turns the mouse into a clicking hand */
 }
 
 .jersey {
@@ -237,4 +239,43 @@ h2 {
     font-weight: bold;
     text-align: center;
     letter-spacing: 1px;
+}
+/* Stats Tooltip Container */
+.stats-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 100%; /* Pushes the popup exactly above the player's head */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the popup perfectly */
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 6px;
+    width: 120px;
+    font-size: 0.75rem;
+    z-index: 10;
+    transition: opacity 0.3s ease; /* Makes it fade in smoothly */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    pointer-events: none;
+    margin-bottom: 8px; /* Adds a little gap between the head and the popup */
+}
+
+/* Little downward-pointing triangle on the bottom of the popup */
+.stats-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #1e3a5f transparent transparent transparent;
+}
+
+/* The actual hover magic! */
+.player:hover .stats-tooltip {
+    visibility: visible;
+    opacity: 1;
 }
